@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YORDataController : NSObject {
+@interface YORDataController : NSObject
+{
     NSString *version;
     NSString *accountNumber;
     NSString *dataCache;
