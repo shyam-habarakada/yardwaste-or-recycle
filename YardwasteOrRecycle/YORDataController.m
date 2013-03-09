@@ -10,10 +10,10 @@
 
 @implementation YORDataController
 
-@synthesize version;
-@synthesize accountNumber;
-@synthesize dataCache;
-@synthesize dataCacheTimestamp;
+@synthesize version = _version;
+@synthesize accountNumber = _accountNumber;
+@synthesize dataCache = _dataCache;
+@synthesize dataCacheTimestamp = _dataCacheTimestamp;
 
 -(id)init
 {

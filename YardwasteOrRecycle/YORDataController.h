@@ -9,12 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface YORDataController : NSObject
-{
-    NSString *version;
-    NSString *accountNumber;
-    NSString *dataCache;
-    NSString *dataCacheTimestamp;
-}
 
 @property (copy, nonatomic) NSString *version;
 @property (copy, nonatomic) NSString *accountNumber;
