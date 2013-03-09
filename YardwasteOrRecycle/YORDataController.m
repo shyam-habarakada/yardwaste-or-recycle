@@ -15,4 +15,9 @@
 @synthesize dataCache;
 @synthesize dataCacheTimestamp;
 
+-(id)init {
+    self = [super init];
+    return self;
+}
+
 @end

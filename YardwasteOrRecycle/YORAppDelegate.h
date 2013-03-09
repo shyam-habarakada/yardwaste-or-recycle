@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YORDataController.h"
 
 @class YORMainViewController;
 
@@ -17,6 +18,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) YORDataController *data;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

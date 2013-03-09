@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 moii. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @interface YORDataController : NSObject {
     NSString *version;
