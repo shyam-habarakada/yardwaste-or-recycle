@@ -26,9 +26,10 @@
 {
     NSError* error;
     NSDate* today = [NSDate date];
-    NSString* url = [NSString stringWithFormat:@"http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=%@&pAddress=&start=%@",
+    NSString* url = [NSString stringWithFormat:@"http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=%@&pAddress=&start=%d",
                      @"2-241443-168844", // replace with users's account number
-                     @"1362874083"]; // replace with today's date value
+                     (int)[today timeIntervalSince1970]];
+    DLog(@"url: %@", url);
     
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
     NSArray* collectionDates = [NSJSONSerialization JSONObjectWithData:data
@@ -40,7 +41,6 @@
     NSEnumerator* e = [collectionDates objectEnumerator];
     NSDate* date;
     NSTimeInterval daysFromToday;
-    NSComparisonResult dateComparisonResult;
     
     id object;
     while (object = [e nextObject])
