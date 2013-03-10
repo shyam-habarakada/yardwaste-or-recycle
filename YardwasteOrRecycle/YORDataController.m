@@ -15,20 +15,16 @@
 @synthesize dataCache = _dataCache;
 @synthesize dataCacheTimestamp = _dataCacheTimestamp;
 
--(id)init
+-(void)fetchData
 {
-    self = [super init];
-
     NSError* error;
     NSString* url = [NSString stringWithFormat:@"http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=%@&pAddress=&start=%@",
                      @"2-241443-168844", // replace with users's account number
                      @"1362874083"]; // replace with today's date value
-                     
+    
     NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
     NSArray* collectionDates = [NSJSONSerialization JSONObjectWithData:data
-                          options:NSJSONReadingMutableContainers error:&error];
-
-    return self;
+                                                               options:NSJSONReadingMutableContainers error:&error];
 }
 
 @end

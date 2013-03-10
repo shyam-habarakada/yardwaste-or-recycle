@@ -15,4 +15,6 @@
 @property (copy, nonatomic) NSString *dataCache;
 @property (copy, nonatomic) NSString *dataCacheTimestamp;
 
+-(void)fetchData;
+
 @end
