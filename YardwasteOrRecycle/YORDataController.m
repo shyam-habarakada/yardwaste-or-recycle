@@ -20,8 +20,11 @@
     self = [super init];
 
     NSError* error;
-    NSURL* url = [NSURL URLWithString:@"http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=2-241443-168844&pAddress=&start=1362874083"];
-    NSData* data = [NSData dataWithContentsOfURL:url];
+    NSString* url = [NSString stringWithFormat:@"http://www.seattle.gov/UTIL/WARP/CollectionCalendar/GetCollectionDays?pAccount=%@&pAddress=&start=%@",
+                     @"2-241443-168844", // replace with users's account number
+                     @"1362874083"]; // replace with today's date value
+                     
+    NSData* data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
     NSArray* collectionDates = [NSJSONSerialization JSONObjectWithData:data
                           options:NSJSONReadingMutableContainers error:&error];
 
