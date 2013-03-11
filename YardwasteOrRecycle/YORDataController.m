@@ -6,6 +6,27 @@
 //  Copyright (c) 2013 moii. All rights reserved.
 //
 
+//
+// SAMPLE API RESPONSE DATA
+//
+// [
+//   {
+//     "id": 0,
+//     "title": "<img src='/UTIL/WARP/images/FYIcon32.gif' width='30px' height='35px' />
+//               <img src='/UTIL/WARP/images/GarbageIcon32.gif' width='30px' height='35px' />
+//               <img src='/UTIL/WARP/images/RecycleIcon32.gif' width='30px' height='35px' />",
+//     "start": "Fri, 01 Mar 2013",
+//     "end": null,
+//     "url": null,
+//     "allDay": true,
+//     "delimitedData": null,
+//     "status": null
+//   },
+//   ...
+// ]
+// 
+
+
 #import "YORDataController.h"
 
 // private methods
@@ -14,13 +35,6 @@
 @end
 
 @implementation YORDataController
-
-@synthesize version = _version;
-@synthesize accountNumber = _accountNumber;
-@synthesize nextCollectionDate = _nextCollectionDate;
-@synthesize nextCollectionIsYardwaste = _nextCollectionIsYardwaste;
-@synthesize dataCache = _dataCache;
-@synthesize dataCacheTimestamp = _dataCacheTimestamp;
 
 -(void)fetchData
 {
@@ -53,7 +67,7 @@
         {
             DLog(@"date: %@, daysFromToday %g", date, daysFromToday);
             [self setNextCollectionDate:date];
-            [self setNextCollectionIsYardwaste:[self isRecycleInTitle:[object objectForKey:@"title"]]];
+            [self setNextCollectionIsRecycle:[self isRecycleInTitle:[object objectForKey:@"title"]]];
             break;
         }
         
@@ -62,7 +76,14 @@
 
 -(BOOL)isRecycleInTitle:(NSString*)title
 {
-    return YES; // tbd implementation
+    if([title rangeOfString:@"RecycleIcon32"].location == NSNotFound)
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
 }
 
 @end

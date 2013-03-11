@@ -22,6 +22,15 @@
     [dateFormatter setDateFormat:@"EEE, dd MMM yyyy"];
     
 	self.nextCollectionDateLabel.text = [dateFormatter stringFromDate:self.data.nextCollectionDate];
+    
+    if(self.data.nextCollectionIsRecycle == YES)
+    {
+        self.yardwasteOrRecycleLabel.text = @"Recycle";
+    }
+    else
+    {
+        self.yardwasteOrRecycleLabel.text = @"Not Recycle";
+    }
 }
 
 - (void)didReceiveMemoryWarning

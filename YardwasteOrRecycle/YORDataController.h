@@ -13,7 +13,7 @@
 @property (copy, nonatomic) NSString *version;
 @property (copy, nonatomic) NSString *accountNumber;
 @property (copy, nonatomic) NSDate *nextCollectionDate;
-@property (nonatomic) BOOL nextCollectionIsYardwaste;
+@property (nonatomic) BOOL nextCollectionIsRecycle;
 @property (copy, nonatomic) NSString *dataCache;
 @property (copy, nonatomic) NSString *dataCacheTimestamp;
 

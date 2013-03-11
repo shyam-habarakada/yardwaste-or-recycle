@@ -12,8 +12,6 @@
 
 @implementation YORAppDelegate
 
-@synthesize data = _data;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
