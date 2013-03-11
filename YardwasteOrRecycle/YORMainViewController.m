@@ -17,7 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"EEE, dd MMM yyyy"];
+    
+	self.nextCollectionDateLabel.text = [dateFormatter stringFromDate:self.data.nextCollectionDate];
 }
 
 - (void)didReceiveMemoryWarning
