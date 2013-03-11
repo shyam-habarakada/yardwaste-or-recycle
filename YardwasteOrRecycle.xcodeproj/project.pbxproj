@@ -500,6 +500,7 @@
 				52CCEC4916EBB4E5002D8682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CCEC4A16EBB4E5002D8682 /* Build configuration list for PBXNativeTarget "YardwasteOrRecycleTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				52CCEC4C16EBB4E5002D8682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
