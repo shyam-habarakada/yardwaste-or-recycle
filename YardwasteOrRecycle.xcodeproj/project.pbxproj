@@ -28,6 +28,10 @@
 		52CCEC3916EBB4E5002D8682 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CCEC0C16EBB4E5002D8682 /* CoreData.framework */; };
 		52CCEC4116EBB4E5002D8682 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC3F16EBB4E5002D8682 /* InfoPlist.strings */; };
 		52CCEC4416EBB4E5002D8682 /* YardwasteOrRecycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC4316EBB4E5002D8682 /* YardwasteOrRecycleTests.m */; };
+		52CCEC4E16EBC318002D8682 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC4D16EBC318002D8682 /* Icon.png */; };
+		52CCEC5016EBC321002D8682 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC4F16EBC321002D8682 /* Icon@2x.png */; };
+		52CCEC5516EBD480002D8682 /* YORDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC5416EBD480002D8682 /* YORDataController.m */; };
+		52CCEC5616EBD480002D8682 /* YORDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC5416EBD480002D8682 /* YORDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		52CCEC4016EBB4E5002D8682 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		52CCEC4216EBB4E5002D8682 /* YardwasteOrRecycleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YardwasteOrRecycleTests.h; sourceTree = "<group>"; };
 		52CCEC4316EBB4E5002D8682 /* YardwasteOrRecycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YardwasteOrRecycleTests.m; sourceTree = "<group>"; };
+		52CCEC4D16EBC318002D8682 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		52CCEC4F16EBC321002D8682 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		52CCEC5316EBD480002D8682 /* YORDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YORDataController.h; sourceTree = "<group>"; };
+		52CCEC5416EBD480002D8682 /* YORDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YORDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		52CCEBFA16EBB4E5002D8682 = {
 			isa = PBXGroup;
 			children = (
+				52CCEC4F16EBC321002D8682 /* Icon@2x.png */,
+				52CCEC4D16EBC318002D8682 /* Icon.png */,
 				52CCEC0E16EBB4E5002D8682 /* YardwasteOrRecycle */,
 				52CCEC3C16EBB4E5002D8682 /* YardwasteOrRecycleTests */,
 				52CCEC0516EBB4E5002D8682 /* Frameworks */,
@@ -140,6 +150,8 @@
 				52CCEC2C16EBB4E5002D8682 /* YORFlipsideViewController.xib */,
 				52CCEC2016EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld */,
 				52CCEC0F16EBB4E5002D8682 /* Supporting Files */,
+				52CCEC5316EBD480002D8682 /* YORDataController.h */,
+				52CCEC5416EBD480002D8682 /* YORDataController.m */,
 			);
 			path = YardwasteOrRecycle;
 			sourceTree = "<group>";
@@ -255,6 +267,8 @@
 				52CCEC1F16EBB4E5002D8682 /* Default-568h@2x.png in Resources */,
 				52CCEC2B16EBB4E5002D8682 /* YORMainViewController.xib in Resources */,
 				52CCEC2E16EBB4E5002D8682 /* YORFlipsideViewController.xib in Resources */,
+				52CCEC4E16EBC318002D8682 /* Icon.png in Resources */,
+				52CCEC5016EBC321002D8682 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +308,7 @@
 				52CCEC2216EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld in Sources */,
 				52CCEC2516EBB4E5002D8682 /* YORMainViewController.m in Sources */,
 				52CCEC2816EBB4E5002D8682 /* YORFlipsideViewController.m in Sources */,
+				52CCEC5516EBD480002D8682 /* YORDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CCEC4416EBB4E5002D8682 /* YardwasteOrRecycleTests.m in Sources */,
+				52CCEC5616EBD480002D8682 /* YORDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YardwasteOrRecycle/YardwasteOrRecycle-Prefix.pch";
 				INFOPLIST_FILE = "YardwasteOrRecycle/YardwasteOrRecycle-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YardwasteOrRecycle;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,7 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YardwasteOrRecycle/YardwasteOrRecycle-Prefix.pch";
 				INFOPLIST_FILE = "YardwasteOrRecycle/YardwasteOrRecycle-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YardwasteOrRecycle;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

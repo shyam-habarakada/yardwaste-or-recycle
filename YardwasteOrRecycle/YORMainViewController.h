@@ -7,12 +7,14 @@
 //
 
 #import "YORFlipsideViewController.h"
-
-#import <CoreData/CoreData.h>
+#import "YORDataController.h"
 
 @interface YORMainViewController : UIViewController <YORFlipsideViewControllerDelegate>
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) YORDataController *data;
+
+@property (retain) IBOutlet UILabel *nextCollectionDateLabel;
+@property (retain) IBOutlet UILabel *yardwasteOrRecycleLabel;
 
 - (IBAction)showInfo:(id)sender;
 

@@ -22,6 +22,8 @@
     [[self data] fetchData];
     
     self.mainViewController = [[YORMainViewController alloc] initWithNibName:@"YORMainViewController" bundle:nil];
+    self.mainViewController.data = self.data;
+    
     self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
     return YES;
