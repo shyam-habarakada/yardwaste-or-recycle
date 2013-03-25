@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"EEE, dd MMM yyyy"];
+    [dateFormatter setDateFormat:@"EEE, dd MMM"];
     
 	self.nextCollectionDateLabel.text = [dateFormatter stringFromDate:self.data.nextCollectionDate];
     
