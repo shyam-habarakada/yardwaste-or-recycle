@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YORSettingsTableViewController.h"
 
 @class YORFlipsideViewController;
 
@@ -17,6 +18,8 @@
 @interface YORFlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <YORFlipsideViewControllerDelegate> delegate;
+
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
 
 - (IBAction)done:(id)sender;
 

@@ -12,12 +12,15 @@
 
 @end
 
-@implementation YORFlipsideViewController
+@implementation YORFlipsideViewController {
+    YORSettingsTableViewController *settingsTableViewController;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        settingsTableViewController = [[YORSettingsTableViewController alloc] init];
     }
     return self;
 }
@@ -25,7 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.tableView.dataSource = settingsTableViewController;
+    self.tableView.delegate = settingsTableViewController;
 }
 
 - (void)didReceiveMemoryWarning
