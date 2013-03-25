@@ -41,15 +41,15 @@
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(YORFlipsideViewController *)controller
+- (void)settingsViewControllerDidFinish:(YORSettingsTableViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)showInfo:(id)sender
 {    
-    YORFlipsideViewController *controller = [[YORFlipsideViewController alloc] initWithNibName:@"YORFlipsideViewController" bundle:nil];
-    controller.delegate = self;
+    YORSettingsTableViewController *controller = [[YORSettingsTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    controller.viewDidFinishDelegate = self;
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:controller animated:YES completion:nil];
 }

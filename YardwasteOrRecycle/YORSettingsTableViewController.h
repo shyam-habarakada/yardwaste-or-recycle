@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class YORSettingsTableViewController;
+
+@protocol YORSettingsTableViewControllerDelegate
+- (void)settingsViewControllerDidFinish:(YORSettingsTableViewController *)controller;
+@end
+
 @interface YORSettingsTableViewController : UITableViewController
+
+@property (weak, nonatomic) id <YORSettingsTableViewControllerDelegate> viewDidFinishDelegate;
+
+- (IBAction)done:(id)sender;
 
 @end

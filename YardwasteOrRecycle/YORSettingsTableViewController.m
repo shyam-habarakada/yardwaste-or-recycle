@@ -19,7 +19,12 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Edit"
+                                                                         style:UIBarButtonItemStylePlain
+                                                                        target:self
+                                                                        action:@selector(toggleEdit)];
+        
+        self.navigationItem.rightBarButtonItem = barButtonItem;
     }
     return self;
 }
@@ -28,6 +33,8 @@
 {
     [super viewDidLoad];
 
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -163,6 +170,7 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"YORAccountNumberInfoTableViewCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = [UIColor whiteColor];
     }
     return cell;
 }
@@ -170,15 +178,42 @@
 - (UITableViewCell *)cellForAccountNumber:(UITableView *)tableView
 {
     static NSString *CellIdentifier = @"CellForAccountNumber";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = @"Account";
-    cell.detailTextLabel.text = @"2-111111-000000";
-    cell.detailTextLabel.textColor = [UIColor grayColor];
+        
+    UITextField *uitf = [[UITextField alloc] initWithFrame:CGRectMake(160, 0, 180, 25)];
+    
+    uitf.adjustsFontSizeToFitWidth = YES;
+    uitf.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
+    uitf.returnKeyType = UIReturnKeyDone;
+    uitf.textColor = [UIColor darkTextColor];
+    uitf.backgroundColor = [UIColor clearColor];
+    uitf.autocorrectionType = UITextAutocorrectionTypeNo;
+    uitf.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    uitf.clearsOnBeginEditing = NO;
+    uitf.textAlignment = UITextAlignmentRight;
+    // uitf.tag = indexPath.row;
+    uitf.placeholder = @"2-111111-000000";
+    // uitf.text = [textFieldArray objectAtIndex:indexPath.row];
+    // uitf.delegate = self;
+    
+    [uitf setEnabled: YES];
+    
+    cell.accessoryView = uitf;
+    
     return cell;
+}
+
+#pragma mark - Actions
+
+- (IBAction)done:(id)sender
+{
+    [self.viewDidFinishDelegate settingsViewControllerDidFinish:self];
 }
 
 @end

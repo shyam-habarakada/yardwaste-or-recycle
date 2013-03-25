@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 moii. All rights reserved.
 //
 
-#import "YORFlipsideViewController.h"
+#import "YORSettingsTableViewController.h"
 #import "YORDataController.h"
 
-@interface YORMainViewController : UIViewController <YORFlipsideViewControllerDelegate>
+@interface YORMainViewController : UIViewController <YORSettingsTableViewControllerDelegate>
 
 @property (strong, nonatomic) YORDataController *data;
 

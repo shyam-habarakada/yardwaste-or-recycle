@@ -19,9 +19,7 @@
 		52CCEC1F16EBB4E5002D8682 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC1E16EBB4E5002D8682 /* Default-568h@2x.png */; };
 		52CCEC2216EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC2016EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld */; };
 		52CCEC2516EBB4E5002D8682 /* YORMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC2416EBB4E5002D8682 /* YORMainViewController.m */; };
-		52CCEC2816EBB4E5002D8682 /* YORFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCEC2716EBB4E5002D8682 /* YORFlipsideViewController.m */; };
 		52CCEC2B16EBB4E5002D8682 /* YORMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC2916EBB4E5002D8682 /* YORMainViewController.xib */; };
-		52CCEC2E16EBB4E5002D8682 /* YORFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CCEC2C16EBB4E5002D8682 /* YORFlipsideViewController.xib */; };
 		52CCEC3616EBB4E5002D8682 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CCEC3516EBB4E5002D8682 /* SenTestingKit.framework */; };
 		52CCEC3716EBB4E5002D8682 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CCEC0616EBB4E5002D8682 /* UIKit.framework */; };
 		52CCEC3816EBB4E5002D8682 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CCEC0816EBB4E5002D8682 /* Foundation.framework */; };
@@ -65,10 +63,7 @@
 		52CCEC2116EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YardwasteOrRecycle.xcdatamodel; sourceTree = "<group>"; };
 		52CCEC2316EBB4E5002D8682 /* YORMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORMainViewController.h; sourceTree = "<group>"; };
 		52CCEC2416EBB4E5002D8682 /* YORMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORMainViewController.m; sourceTree = "<group>"; };
-		52CCEC2616EBB4E5002D8682 /* YORFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YORFlipsideViewController.h; sourceTree = "<group>"; };
-		52CCEC2716EBB4E5002D8682 /* YORFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YORFlipsideViewController.m; sourceTree = "<group>"; };
 		52CCEC2A16EBB4E5002D8682 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YORMainViewController.xib; sourceTree = "<group>"; };
-		52CCEC2D16EBB4E5002D8682 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YORFlipsideViewController.xib; sourceTree = "<group>"; };
 		52CCEC3416EBB4E5002D8682 /* YardwasteOrRecycleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YardwasteOrRecycleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CCEC3516EBB4E5002D8682 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		52CCEC3E16EBB4E5002D8682 /* YardwasteOrRecycleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YardwasteOrRecycleTests-Info.plist"; sourceTree = "<group>"; };
@@ -151,17 +146,14 @@
 				52CCEC1816EBB4E5002D8682 /* YORAppDelegate.m */,
 				52CCEC2316EBB4E5002D8682 /* YORMainViewController.h */,
 				52CCEC2416EBB4E5002D8682 /* YORMainViewController.m */,
-				52CCEC2616EBB4E5002D8682 /* YORFlipsideViewController.h */,
-				52CCEC2716EBB4E5002D8682 /* YORFlipsideViewController.m */,
-				52CCEC2916EBB4E5002D8682 /* YORMainViewController.xib */,
-				52CCEC2C16EBB4E5002D8682 /* YORFlipsideViewController.xib */,
-				52CCEC2016EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld */,
-				52CCEC0F16EBB4E5002D8682 /* Supporting Files */,
 				52CCEC5316EBD480002D8682 /* YORDataController.h */,
 				52CCEC5416EBD480002D8682 /* YORDataController.m */,
 				52F341E016FFD8B200633026 /* YORSettingsTableViewController.h */,
 				52F341E116FFD8B200633026 /* YORSettingsTableViewController.m */,
+				52CCEC2916EBB4E5002D8682 /* YORMainViewController.xib */,
 				52F341E51700016F00633026 /* YORAccountNumberInfoTableViewCell.xib */,
+				52CCEC2016EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld */,
+				52CCEC0F16EBB4E5002D8682 /* Supporting Files */,
 			);
 			path = YardwasteOrRecycle;
 			sourceTree = "<group>";
@@ -277,7 +269,6 @@
 				52CCEC1D16EBB4E5002D8682 /* Default@2x.png in Resources */,
 				52CCEC1F16EBB4E5002D8682 /* Default-568h@2x.png in Resources */,
 				52CCEC2B16EBB4E5002D8682 /* YORMainViewController.xib in Resources */,
-				52CCEC2E16EBB4E5002D8682 /* YORFlipsideViewController.xib in Resources */,
 				52CCEC4E16EBC318002D8682 /* Icon.png in Resources */,
 				52CCEC5016EBC321002D8682 /* Icon@2x.png in Resources */,
 				52F341E416FFFF9900633026 /* sample-spu-bill.png in Resources */,
@@ -320,7 +311,6 @@
 				52CCEC1916EBB4E5002D8682 /* YORAppDelegate.m in Sources */,
 				52CCEC2216EBB4E5002D8682 /* YardwasteOrRecycle.xcdatamodeld in Sources */,
 				52CCEC2516EBB4E5002D8682 /* YORMainViewController.m in Sources */,
-				52CCEC2816EBB4E5002D8682 /* YORFlipsideViewController.m in Sources */,
 				52CCEC5516EBD480002D8682 /* YORDataController.m in Sources */,
 				52F341E216FFD8B300633026 /* YORSettingsTableViewController.m in Sources */,
 			);
@@ -360,14 +350,6 @@
 				52CCEC2A16EBB4E5002D8682 /* en */,
 			);
 			name = YORMainViewController.xib;
-			sourceTree = "<group>";
-		};
-		52CCEC2C16EBB4E5002D8682 /* YORFlipsideViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52CCEC2D16EBB4E5002D8682 /* en */,
-			);
-			name = YORFlipsideViewController.xib;
 			sourceTree = "<group>";
 		};
 		52CCEC3F16EBB4E5002D8682 /* InfoPlist.strings */ = {
