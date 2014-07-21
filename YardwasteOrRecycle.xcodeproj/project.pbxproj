@@ -76,7 +76,7 @@
 		52CCEC5416EBD480002D8682 /* YORDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YORDataController.m; sourceTree = "<group>"; };
 		52F341E016FFD8B200633026 /* YORSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YORSettingsTableViewController.h; sourceTree = "<group>"; };
 		52F341E116FFD8B200633026 /* YORSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YORSettingsTableViewController.m; sourceTree = "<group>"; };
-		52F341E316FFFF9900633026 /* sample-spu-bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sample-spu-bill.png"; path = "../../../Desktop/sample-spu-bill.png"; sourceTree = "<group>"; };
+		52F341E316FFFF9900633026 /* sample-spu-bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sample-spu-bill.png"; sourceTree = "<group>"; };
 		52F341E51700016F00633026 /* YORAccountNumberInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YORAccountNumberInfoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

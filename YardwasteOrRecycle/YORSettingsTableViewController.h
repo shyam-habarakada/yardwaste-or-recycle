@@ -14,7 +14,7 @@
 - (void)settingsViewControllerDidFinish:(YORSettingsTableViewController *)controller;
 @end
 
-@interface YORSettingsTableViewController : UITableViewController
+@interface YORSettingsTableViewController : UITableViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) id <YORSettingsTableViewControllerDelegate> viewDidFinishDelegate;
 
